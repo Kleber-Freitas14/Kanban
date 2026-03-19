@@ -1,7 +1,32 @@
-body{
-    /*Cor de fundo do projeto*/
+    /*Configuração da área de trabalho - body aplica o estilo a toda a pagina*/
+body {
+    
     font-family: Arial;
-    margin: 0;
-    padding: 10px;
-    background-color: rgb(240, 211, 177);
+    margin: 10;
+    padding: 50px;
+    background-color: #c1d7ed;
 }
+/*Alinhamento do Cabeçalho*/
+h1{
+    text-align: center;
+}
+
+/*Configurando Área de Adicionar Itens*/
+.inCard{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /*Margem entre a caixa de texto e a tabela*/
+}
+
+/**/
+.inCard input{
+    padding: 10px;/*Altura da caixa de texto*/
+    width: 500px; /*comprimento da caixa de texto*/
+}
+
+.inCard button{
+    padding: 10px;
+    margin-left: 10px;/*Distância entre a caixa de texto e a caixa do butron*/
+    cursor: pointer
+}
+
