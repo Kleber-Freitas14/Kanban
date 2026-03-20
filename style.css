@@ -1,88 +1,101 @@
-    /*Configuração da área de trabalho - body aplica o estilo a toda a pagina*/
-    body {
-        background-image: url("img/pFundo.jpg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+/*Configuração da área de trabalho - body aplica o estilo a toda a pagina*/
+html,
+body {
+    height: 100%;
+    margin: 30;
+}
 
-    }
+body {
+    background-image: url("img/pFundo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
-    /*Alinhamento do Cabeçalho*/
-    h1 {
-        color: rgb(253, 253, 253, 0.6);
-        text-align: center;
-    }
+/*Alinhamento do Cabeçalho*/
+h1 {
+    color: rgb(253, 253, 253, 0.6);
+    text-align: center;
+}
 
-    h2 {
-        color: rgba(161, 156, 156, 0.8);
+h2 {
+    color: rgba(161, 156, 156, 0.8);
 
-    }
+}
 
-    /*Configurando Área de Adicionar Itens*/
-    .inCard {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 20px;
-        /*Margem entre a caixa de texto e a tabela*/
-    }
+/*Configurando Área de Adicionar Itens*/
+.inCard {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    /*Margem entre a caixa de texto e a tabela*/
+}
 
-    /**/
-    .inCard input {
-        padding: 10px;
-        /*Altura da caixa de texto*/
-        width: 500px;
-        /*comprimento da caixa de texto*/
-    }
+/**/
+.inCard input {
+    padding: 10px;
+    /*Altura da caixa de texto*/
+    width: 500px;
+    /*comprimento da caixa de texto*/
+}
 
-    .inCard button {
-        padding: 10px;
-        margin-left: 10px;
-        /*Distância entre a caixa de texto e a caixa do butron*/
-        cursor: pointer;
-    }
+.inCard button {
+    padding: 10px;
+    margin-left: 10px;
+    /*Distância entre a caixa de texto e a caixa do butron*/
+    cursor: pointer;
+}
 
-    .colunas {
-        display: flex;
-        /*Permite que as colunas fiquem lado a lado*/
-        gap: 10px
-    }
+.colunas {
+    display: flex;
+    /*Permite que as colunas fiquem lado a lado*/
+    gap: 10px
+}
 
-    /*configurações das colunas, centralização, cor */
-    .coluna {
-        flex: 1;
-        text-align: center;
-        background-color: rgba(255, 255, 255, 0.2);
-        padding: 10px;
-        border-radius: 25px;
-        border: solid 2px rgba(255, 255, 255, 0.3);
-        backdrop-filter: blur(10px);
-    }
+/*configurações das colunas, centralização, cor */
+.coluna {
+    flex: 1;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 25px;
+    border: solid 2px rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+}
 
-    button {
-        border-radius: 7px;
-        background-color: rgba(159, 202, 159, 0.4);
-        color: aliceblue;
-    }
-    input{
-        border-radius: 7px;
-        background-color: rgba(159, 202, 159, 0.4);
-        
-    }
-    
-    #inBox::placeholder{
-        color: beige;
-    }
+.card.concluido {
+    text-decoration: line-through;
+    opacity: 0.6;
+    background-color: rgba(0, 255, 0, 0.2);
+}
 
-    .card {
-        background-color: rgba(159, 202, 159, 0.4);
-        padding: 10px;
-        margin: 10px;
-        border-radius: 5px;
-        cursor: grab;
-    }
+button {
+    border-radius: 7px;
+    background-color: rgba(159, 202, 159, 0.4);
+    color: aliceblue;
+}
 
-    @media (max-width: 600px) {
-        .Colunas {
-            flex-direction: column;
-        }
+input {
+    border-radius: 7px;
+    background-color: rgba(159, 202, 159, 0.4);
+
+}
+
+#inBox::placeholder {
+    color: white;
+}
+
+.card {
+    background-color: rgba(159, 202, 159, 0.4);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: grab;
+    color: rgb(11, 2, 105, 0.7);
+}
+
+@media (max-width: 600px) {
+    .Colunas {
+        flex-direction: column;
     }
+}

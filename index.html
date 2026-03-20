@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,9 +14,12 @@
     <h1>✅--Quadro Kanban--✅</h1>
 
     <div class="inCard">
-        <input type="text" id="inBox" placeholder="Digite a Tarefa">
+        <input type="text" id="inBox" placeholder="DIGITE SUA ATIVIDADE.">
         <button onclick="novocard()">Adicionar</button>
+        <button onclick="okCard()">Concluída</button>
+        <button onclick="delCard(this)">Excluir</button>
     </div>
+
 
     <div class="colunas">
         <div class="coluna" id="col01" ondrop="drop(event)" ondragover="allowDrop(event)">
@@ -26,7 +30,7 @@
             <h2>Realizando! 💻</h2>
         </div>
 
-        <div class="coluna" id="col03" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <div class="coluna" id="realizado" ondrop="drop(event)" ondragover="allowDrop(event)">
             <h2>Realizado! 🗄️</h2>
         </div>
     </div>
@@ -34,4 +38,5 @@
     <script src="script.js"></script>
 
 </body>
+
 </html>
